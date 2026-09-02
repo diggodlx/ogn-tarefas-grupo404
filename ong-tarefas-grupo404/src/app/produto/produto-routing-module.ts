@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import{Cadastro} from './cadastro/cadastro';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path:'cadastro', component: Cadastro
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
