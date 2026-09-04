@@ -1,5 +1,7 @@
 <p>Exercicio 4!</p>
 
-<button (click)="salvar()">Salvar</button>
+<button [disabled]="botaoDesabilitado" (click)="salvar()">
+  Salvar
+</button>
 
 <p>{{ mensagem }}</p>

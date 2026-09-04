@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './exe4.scss',
 })
 export class Exe4 {
-  
-   mensagem = '';
+ botaoDesabilitado = false;
+  mensagem = '';
 
-  salvar() {
-    this.mensagem = 'Salvo com sucesso!';
-  }
+salvar() {
+  this.mensagem = 'Salvo com sucesso!';
+  this.botaoDesabilitado = true;
+}
 }
