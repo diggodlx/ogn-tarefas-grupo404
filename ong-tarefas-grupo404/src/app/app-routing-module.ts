@@ -9,6 +9,10 @@ const routes: Routes = [
 {
   path: 'produto',
   loadChildren: () => import('./produto/produto-module').then(m => m.ProdutoModule)
+},
+{
+  path: 'list-exe',
+  loadChildren: () => import('./list-exe/list-exe-module').then(m => m.ListExeModule)
 }
 ];
 
