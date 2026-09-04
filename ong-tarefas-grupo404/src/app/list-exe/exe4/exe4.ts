@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
   templateUrl: './exe4.html',
   styleUrl: './exe4.scss',
 })
-export class Exe4 {}
+export class Exe4 {
+  
+   mensagem = '';
+
+  salvar() {
+    this.mensagem = 'Salvo com sucesso!';
+  }
+}
