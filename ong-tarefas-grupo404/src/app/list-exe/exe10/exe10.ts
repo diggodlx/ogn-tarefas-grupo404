@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   templateUrl: './exe10.html',
   styleUrl: './exe10.scss',
 })
-export class Exe10 {}
+export class Exe10 {
+  nomeAluno ='';
+  senhaAluno ='';
+  mensagem = '';         //aviso de erro ou sucesso
+
+}
