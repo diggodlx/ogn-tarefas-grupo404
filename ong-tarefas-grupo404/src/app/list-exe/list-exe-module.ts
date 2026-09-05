@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
 
 import { ListExeRoutingModule } from './list-exe-routing-module';
 import { Exe1 } from './exe1/exe1';
@@ -10,9 +10,10 @@ import { Exe4 } from './exe4/exe4';
 import { Exe5 } from './exe5/exe5';
 import { Exe6 } from './exe6/exe6';
 import { Exe7 } from './exe7/exe7';
+import { Exe8 } from './exe8/exe8';
 
 @NgModule({
-  declarations: [Exe1, Exe2, Exe3, Exe4, Exe5, Exe6, Exe7],
+  declarations: [Exe1, Exe2, Exe3, Exe4, Exe5, Exe6, Exe7, Exe8],
   imports: [CommonModule, ListExeRoutingModule, FormsModule],
 })
 export class ListExeModule {}

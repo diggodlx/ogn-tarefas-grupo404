@@ -1,0 +1,18 @@
+<h1>Exercício 8!</h1>
+
+<label>Produto:</label>
+<input type="text" [(ngModel)]="produto" />
+
+<label>Preço:</label>
+<input type="number" [(ngModel)]="preco" />
+
+<label>Quantidade:</label> 
+<input type="number" [(ngModel)]="quantidade" />
+
+<h2>Seu produtos:</h2>
+
+<p>Produto: {{produto}}</p>
+<p>Preço: {{preco | currency}}</p>
+<p>Quantidade: {{quantidade}}</p>
+<p>Total: {{total | currency}}</p>
+
