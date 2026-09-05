@@ -8,6 +8,7 @@ import { Exe5 } from './exe5/exe5';
 import { Exe6 } from './exe6/exe6';
 import { Exe7 } from './exe7/exe7';
 import { Exe8 } from './exe8/exe8';
+import { Exe9 } from './exe9/exe9';
  
 const routes: Routes = [
   {
@@ -34,6 +35,9 @@ const routes: Routes = [
   }, 
   {
     path: 'exe8', component: Exe8
+  },
+  {
+    path: 'exe9', component: Exe9
   }
 ];
 
