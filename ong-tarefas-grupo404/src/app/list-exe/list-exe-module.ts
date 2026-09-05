@@ -12,9 +12,10 @@ import { Exe6 } from './exe6/exe6';
 import { Exe7 } from './exe7/exe7';
 import { Exe8 } from './exe8/exe8';
 import { Exe9 } from './exe9/exe9';
+import { Exe10 } from './exe10/exe10';
 
 @NgModule({
-  declarations: [Exe1, Exe2, Exe3, Exe4, Exe5, Exe6, Exe7, Exe8, Exe9],
+  declarations: [Exe1, Exe2, Exe3, Exe4, Exe5, Exe6, Exe7, Exe8, Exe9, Exe10],
   imports: [CommonModule, ListExeRoutingModule, FormsModule],
 })
 export class ListExeModule {}

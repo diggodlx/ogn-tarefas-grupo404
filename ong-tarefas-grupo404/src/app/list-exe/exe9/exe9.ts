@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class Exe9 {
 
   estoque = 0;
+  nomeProduto = '';
 
   aumentar(): void {
     this.estoque++;

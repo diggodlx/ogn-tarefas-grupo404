@@ -1,3 +1,16 @@
 <p>Exercício 9!</p>
 
-<p>Em desenvolvimento...</p>
+<label>Nome do Produto:</label>
+<input type="text" [(ngModel)]="nomeProduto" />
+
+<p>Produto: {{ nomeProduto }}</p>
+
+<p>Quantidade: {{ estoque }}</p>
+
+<button (click)="diminuir()" [disabled]="estoque === 0">
+  -
+</button>
+
+<button (click)="aumentar()">
+  +
+</button>
