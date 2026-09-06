@@ -1,1 +1,25 @@
-<p>exe10 works!</p>
+<p>Exercício 10!</p>
+
+  <label>Usuário:</label>
+  <input
+    type="text"
+    [(ngModel)]="usuario"
+    placeholder="Digite seu usuário"
+  >
+
+  <label>Senha:</label>
+  <input
+    type="password"
+    [(ngModel)]="senha"
+    placeholder="Digite sua senha"
+  >
+
+  <button
+    [disabled]="usuario === '' || senha === ''"
+    (click)="entrar()">
+    Entrar
+  </button>
+
+  <h2 *ngIf="mensagem">
+    {{ mensagem }}
+  </h2>

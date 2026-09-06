@@ -7,8 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './exe10.scss',
 })
 export class Exe10 {
-  nomeAluno ='';
-  senhaAluno ='';
-  mensagem = '';         //aviso de erro ou sucesso
+  usuario: string = '';
+  senha: string = '';
+  mensagem: string = '';
 
+  entrar() {
+    this.mensagem = `Bem-vindo, ${this.usuario}!`;
+  }
 }
