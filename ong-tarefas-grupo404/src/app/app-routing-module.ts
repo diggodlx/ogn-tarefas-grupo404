@@ -13,6 +13,10 @@ const routes: Routes = [
 {
   path: 'list-exe',
   loadChildren: () => import('./list-exe/list-exe-module').then(m => m.ListExeModule)
+},
+{
+  path: 'list-exe2',
+  loadChildren: () => import('./list-exe2/list-exe2-module').then(m => m.ListExe2Module)
 }
 ];
 

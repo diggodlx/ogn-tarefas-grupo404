@@ -17,7 +17,20 @@ import { Exe11 } from './exe11/exe11';
 import { Missao } from './missao/missao';
 
 @NgModule({
-  declarations: [Exe1, Exe2, Exe3, Exe4, Exe5, Exe6, Exe7, Exe8, Exe9, Exe10, Exe11, Missao],
+  declarations: [
+    Exe1,
+    Exe2,
+    Exe3,
+    Exe4,
+    Exe5,
+    Exe6,
+    Exe7,
+    Exe8,
+    Exe9,
+    Exe10,
+    Exe11,
+    Missao,
+  ],
   imports: [CommonModule, ListExeRoutingModule, FormsModule],
 })
 export class ListExeModule {}

@@ -1,0 +1,13 @@
+<p>Exercício 2</p>
+
+<div *ngIf="usuarioLogado; else naoLogado">
+  <p>Bem-vindo, usuário logado!</p>
+</div>
+
+<ng-template #naoLogado>
+  <p>Você não está logado. Por favor, faça login para acessar o sistema.</p>
+</ng-template>
+
+<button (click)="alterarLogin()">
+  {{ usuarioLogado ? 'Login' : 'Ativar' }}
+</button>
