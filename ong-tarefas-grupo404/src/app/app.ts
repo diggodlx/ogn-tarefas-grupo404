@@ -1,4 +1,5 @@
-import { Component, signal } from '@angular/core';
+import { Component,signal } from '@angular/core';
+import {Input} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,9 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('ong-tarefas-grupo404');
+
+  @Input() 
+  topo = "Loja Angular 2"; // app cabecalho
+
+  Loja = "Loja Angular Pai";
 }

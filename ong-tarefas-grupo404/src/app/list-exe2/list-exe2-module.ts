@@ -5,9 +5,10 @@ import { ListExe2RoutingModule } from './list-exe2-routing-module';
 import { Et1 } from './et1/et1';
 import { Et2 } from './et2/et2';
 import { Et3 } from './et3/et3';
+import { Et4 } from './et4/et4';
 
 @NgModule({
-  declarations: [Et1, Et2, Et3],
+  declarations: [Et1, Et2, Et3, Et4],
   imports: [CommonModule, ListExe2RoutingModule],
 })
 export class ListExe2Module {}

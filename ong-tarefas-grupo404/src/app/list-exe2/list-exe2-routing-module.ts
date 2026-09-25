@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { Et1 } from './et1/et1';
 import { Et2 } from './et2/et2';
 import { Et3 } from './et3/et3';
+import { Et4 } from './et4/et4';
 
 const routes: Routes = [
   {
@@ -13,6 +14,9 @@ const routes: Routes = [
   },
   {
     path: 'et3', component: Et3
+  },
+  {
+    path: 'et4', component: Et4
   }
 ];
 
