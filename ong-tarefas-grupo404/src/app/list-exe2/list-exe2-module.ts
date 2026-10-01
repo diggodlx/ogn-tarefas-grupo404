@@ -9,9 +9,10 @@ import { Et4 } from './et4/et4';
 import { Et5 } from './et5/et5';
 import { Et6 } from './et6/et6';
 import { Et7 } from './et7/et7';
+import { Et8 } from './et8/et8';
 
 @NgModule({
-  declarations: [Et1, Et2, Et3, Et4, Et5, Et6, Et7],
+  declarations: [Et1, Et2, Et3, Et4, Et5, Et6, Et7, Et8],
   imports: [CommonModule, ListExe2RoutingModule],
 })
 export class ListExe2Module {}
