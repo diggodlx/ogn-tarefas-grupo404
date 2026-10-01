@@ -1,0 +1,21 @@
+<p>Exercício 12</p>
+
+<div class="container">
+
+  <h3>Produtos cadastrados</h3>
+
+  <p *ngIf="produtos.length === 0">
+    Nenhum produto cadastrado.
+  </p>
+
+  <div *ngFor="let produto of produtos; let i = index" class="produto">
+
+    <span>
+      {{ produto.nome }} - Quantidade: {{ produto.quantidade }}
+    </span>
+
+    <button (click)="excluir(i)">Excluir</button>
+
+  </div>
+
+</div>

@@ -1,0 +1,19 @@
+<p>Exercício 11</p>
+
+<hr>
+
+<ng-container *ngFor="let produto of produtos">
+  <div *ngIf="!somenteDisponiveis || produto.quantidade > 0">
+
+    <h3>{{ produto.nome }}</h3>
+
+    <p>
+      Preço: {{ produto.preco | currency:'BRL':'symbol':'1.2-2' }}
+    </p>
+
+    <p>
+      Quantidade disponível: {{ produto.quantidade }}
+    </p>
+
+  </div>
+</ng-container>

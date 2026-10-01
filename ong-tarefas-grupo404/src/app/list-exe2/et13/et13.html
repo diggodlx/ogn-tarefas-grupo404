@@ -1,0 +1,67 @@
+<p>Exercício 13</p>
+
+<div class="container">
+
+  <h2>Lista de Tarefas</h2>
+
+  @if (tarefas.length === 0) {
+
+    <p>Nenhuma tarefa cadastrada.</p>
+
+  } @else {
+
+    @for (tarefa of tarefas; track tarefa.id) {
+
+      <div
+        class="tarefa"
+        [ngClass]="{
+          'prioridade-baixa': tarefa.prioridade === 'baixa',
+          'prioridade-media': tarefa.prioridade === 'média',
+          'prioridade-alta': tarefa.prioridade === 'alta',
+          'concluida': tarefa.concluida
+        }"
+      >
+
+        <h3>{{ tarefa.titulo }}</h3>
+
+        <p>
+          <strong>Responsável:</strong>
+          {{ tarefa.responsavel }}
+        </p>
+
+        <p>
+          <strong>Prioridade:</strong>
+          {{ tarefa.prioridade }}
+        </p>
+
+        @if (tarefa.concluida) {
+
+          <p>Situação: Concluída</p>
+
+        } @else {
+
+          <p>Situação: Pendente</p>
+
+        }
+
+        <button (click)="alterarSituacao(tarefa)">
+          Alterar situação
+        </button>
+
+      </div>
+
+    }
+
+  }
+
+  <div class="resumo">
+
+    <h3>Resumo</h3>
+
+    <p>Total de tarefas: {{ totalTarefas }}</p>
+
+    <p>Tarefas concluídas: {{ tarefasConcluidas }}</p>
+
+    <p>Tarefas pendentes: {{ tarefasPendentes }}</p>
+
+  </div>

@@ -1,0 +1,42 @@
+.container {
+  width: 600px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.tarefa {
+  border: 2px solid #ccc;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.prioridade-baixa {
+  border-left: 8px solid green;
+}
+
+.prioridade-media {
+  border-left: 8px solid orange;
+}
+
+.prioridade-alta {
+  border-left: 8px solid red;
+}
+
+.concluida {
+  background-color: #e0ffe0;
+  opacity: 0.8;
+}
+
+button {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.resumo {
+  margin-top: 25px;
+  padding: 15px;
+  border: 2px solid #333;
+  border-radius: 8px;
+}

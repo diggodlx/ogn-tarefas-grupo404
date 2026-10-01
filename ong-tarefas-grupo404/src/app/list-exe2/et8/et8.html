@@ -3,15 +3,23 @@
 
 <h2>Lista de Produtos</h2>
 
-<div *ngFor="let produto of produtos; let i = index">
+@for (produto of produtos; track produto.id) {
 
-  <h3>Produto {{ i + 1 }}</h3>
+  <h3>Produto {{ $index + 1 }}</h3>
 
-  <p><strong>Nome:</strong> {{ produto.nome }}</p>
+  <p>
+    <strong>Nome:</strong> {{ produto.nome }}
+  </p>
 
-  <p><strong>Preço:</strong> {{ produto.preco | currency:'BRL':'symbol':'1.2-2' }}</p>
+  <p>
+    <strong>Preço:</strong>
+    {{ produto.preco | currency:'BRL':'symbol':'1.2-2' }}
+  </p>
 
-  <p><strong>Quantidade disponível:</strong> {{ produto.quantidade }}</p>
+  <p>
+    <strong>Quantidade disponível:</strong>
+    {{ produto.quantidade }}
+  </p>
 
   <p>
     <strong>Valor total em estoque:</strong>
@@ -20,4 +28,8 @@
 
   <hr>
 
-</div>
+} @empty {
+
+  <p>Nenhum produto cadastrado.</p>
+
+}

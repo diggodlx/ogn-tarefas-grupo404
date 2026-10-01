@@ -10,6 +10,10 @@ import { Et7 } from './et7/et7';
 import { Et8 } from './et8/et8';
 import { Et9 } from './et9/et9';
 import { Et10 } from './et10/et10';
+import { Et11 } from './et11/et11';
+import { Et12 } from './et12/et12';
+import { Et13 } from './et13/et13';
+
 
 const routes: Routes = [
   {
@@ -41,6 +45,15 @@ const routes: Routes = [
   },
   {
     path:'et10', component: Et10
+  },
+  {
+    path:'et11', component: Et11
+  },
+  {
+    path:'et12', component: Et12
+  },
+  {
+    path:'et13', component: Et13
   }
 ];
 

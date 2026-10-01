@@ -1,0 +1,41 @@
+.container {
+  width: 400px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.erro {
+  color: red;
+  margin-top: 15px;
+}
+
+.produto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}

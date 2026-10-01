@@ -8,16 +8,18 @@
   <strong>Quantidade total:</strong> {{ nomes.length }}
 </p>
 
-<div *ngIf="nomes.length > 0">
+@if (nomes.length > 0) {
   <h3>Nomes cadastrados:</h3>
 
   <ul>
-    <li *ngFor="let nome of nomes">
-      {{ nome }}
-    </li>
+    @for (nome of nomes; track $index) {
+      <li>
+        {{ nome }}
+      </li>
+    }
   </ul>
-</div>
-
-<p *ngIf="nomes.length === 0">
-  Nenhum nome cadastrado
-</p>
+} @else {
+  <p>
+    Nenhum nome cadastrado
+  </p>
+}
