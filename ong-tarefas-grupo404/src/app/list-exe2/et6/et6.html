@@ -1,0 +1,23 @@
+<p>Exercício 6</p>
+
+<button (click)="restaurarLista()">
+  Restaurar lista inicial
+</button>
+
+<p>
+  <strong>Quantidade total:</strong> {{ nomes.length }}
+</p>
+
+<div *ngIf="nomes.length > 0">
+  <h3>Nomes cadastrados:</h3>
+
+  <ul>
+    <li *ngFor="let nome of nomes">
+      {{ nome }}
+    </li>
+  </ul>
+</div>
+
+<p *ngIf="nomes.length === 0">
+  Nenhum nome cadastrado
+</p>
