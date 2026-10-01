@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   templateUrl: './et7.html',
   styleUrl: './et7.scss',
 })
-export class Et7 {}
+export class Et7 {
+
+  disciplinas = [
+    'Programação Web',
+    'Banco de Dados',
+    'Engenharia de Software',
+    'Redes de Computadores',
+    'Estrutura de Dados',
+    'Sistemas Operacionais'
+  ];
+}

@@ -1,0 +1,33 @@
+ul {
+  width: 500px;
+  padding: 0;
+  margin: 20px auto;
+}
+
+li {
+  list-style: none;
+  padding: 15px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Posições pares */
+.par {
+  background-color: lightblue;
+}
+
+/* Posições ímpares */
+.impar {
+  background-color: lightgray;
+}
+
+/* Primeira disciplina */
+.primeiro {
+  font-weight: bold;
+  border: 3px solid green;
+}
+
+/* Última disciplina */
+.ultimo {
+  border: 3px solid red;
+}

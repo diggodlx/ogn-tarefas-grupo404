@@ -6,6 +6,7 @@ import { Et3 } from './et3/et3';
 import { Et4 } from './et4/et4';
 import { Et5 } from './et5/et5';
 import { Et6 } from './et6/et6';
+import { Et7 } from './et7/et7';
 
 const routes: Routes = [
   {
@@ -25,6 +26,9 @@ const routes: Routes = [
   },
   {
     path: 'et6', component: Et6
+  },
+  {
+    path: 'et7', component: Et7
   }
 ];
 

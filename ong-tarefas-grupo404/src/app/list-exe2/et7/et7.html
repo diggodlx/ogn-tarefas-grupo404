@@ -1,1 +1,20 @@
-<p>et7 works!</p>
+<p>Exercício 7</p>
+
+<h2>Lista de Disciplinas</h2>
+
+<ul>
+  <li
+    *ngFor="let disciplina of disciplinas; let i = index; let par = even; let impar = odd; let primeiro = first; let ultimo = last"
+    [ngClass]="{
+      'par': par,
+      'impar': impar,
+      'primeiro': primeiro,
+      'ultimo': ultimo
+    }">
+
+    {{ i + 1 }} - {{ disciplina }}
+
+    <span *ngIf="primeiro"> - Primeira disciplina</span>
+
+  </li>
+</ul>
