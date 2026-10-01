@@ -13,6 +13,7 @@ import { Et10 } from './et10/et10';
 import { Et11 } from './et11/et11';
 import { Et12 } from './et12/et12';
 import { Et13 } from './et13/et13';
+import { Df } from './df/df';
 
 
 const routes: Routes = [
@@ -54,6 +55,9 @@ const routes: Routes = [
   },
   {
     path:'et13', component: Et13
+  },
+  {
+    path: 'df', component: Df
   }
 ];
 

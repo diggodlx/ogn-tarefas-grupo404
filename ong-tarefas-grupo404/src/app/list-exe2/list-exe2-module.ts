@@ -15,9 +15,10 @@ import { Et10 } from './et10/et10';
 import { Et11 } from './et11/et11';
 import { Et12 } from './et12/et12';
 import { Et13 } from './et13/et13';
+import { Df } from './df/df';
 
 @NgModule({
-  declarations: [Et1, Et2, Et3, Et4, Et5, Et6, Et7, Et8, Et9, Et10, Et11, Et12, Et13],
+  declarations: [Et1, Et2, Et3, Et4, Et5, Et6, Et7, Et8, Et9, Et10, Et11, Et12, Et13, Df],
   imports: [CommonModule, ListExe2RoutingModule],
 })
 export class ListExe2Module {}
