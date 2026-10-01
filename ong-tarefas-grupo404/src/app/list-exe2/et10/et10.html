@@ -1,1 +1,35 @@
-<p>et10 works!</p>
+<p>Exercício 10</p>
+
+<h2>Produtos</h2>
+
+<div *ngFor="let produto of produtos">
+
+  <h3>{{ produto.nome }}</h3>
+
+  <p>Quantidade: {{ produto.quantidade }}</p>
+
+  <!-- Mostra somente se estiver em promoção -->
+  <p *ngIf="produto.promocao"
+     [ngStyle]="{
+       'font-weight': 'bold',
+       'color': 'red'
+     }">
+    Produto em promoção!
+  </p>
+
+  <!-- Preço com cor diferente quando está em promoção -->
+  <p
+    [ngStyle]="{
+      'color': produto.promocao ? 'red' : 'black',
+      'font-weight': produto.promocao ? 'bold' : 'normal'
+    }"
+  >
+    Preço:
+    {{ produto.preco | currency:'BRL':'symbol':'1.2-2' }}
+  </p>
+
+  <button (click)="alterarPromocao(produto)">
+    {{ produto.promocao ? 'Desativar promoção' : 'Ativar promoção' }}
+  </button>
+
+</div>
