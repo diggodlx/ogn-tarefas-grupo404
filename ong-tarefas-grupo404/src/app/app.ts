@@ -11,7 +11,8 @@ export class App {
   protected readonly title = signal('ong-tarefas-grupo404');
 
   @Input() 
-  topo = "Loja Angular 2"; // app cabecalho
 
-  Loja = "Loja Angular Pai";
+  topo = "Loja Angular";
+
+  texto = "Loja Angular 2";
 }

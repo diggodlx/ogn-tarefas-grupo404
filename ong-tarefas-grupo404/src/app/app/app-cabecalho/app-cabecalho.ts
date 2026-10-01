@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
-
+import { Component, input } from '@angular/core';
+import { Input } from '@angular/core';
 @Component({
-  selector: 'app-app-cabecalho',
+  selector: 'app-cabecalho',
   standalone: false,
   templateUrl: './app-cabecalho.html',
   styleUrl: './app-cabecalho.scss',
 })
-export class AppCabecalho {}
+export class AppCabecalho {
+  @Input() titulo: string = 'Listangem';
+}
