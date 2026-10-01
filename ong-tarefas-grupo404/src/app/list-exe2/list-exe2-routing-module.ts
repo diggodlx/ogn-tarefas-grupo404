@@ -8,6 +8,7 @@ import { Et5 } from './et5/et5';
 import { Et6 } from './et6/et6';
 import { Et7 } from './et7/et7';
 import { Et8 } from './et8/et8';
+import { Et9 } from './et9/et9';
 
 const routes: Routes = [
   {
@@ -33,7 +34,11 @@ const routes: Routes = [
   },
   {
     path: 'et8', component: Et8
-  }
+  },
+  {
+    path: 'et9', component: Et9
+  },
+  {}
 ];
 
 @NgModule({
